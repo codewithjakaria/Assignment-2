@@ -321,3 +321,99 @@
     grid-column: span 1;
   }
 }
+
+/* Features and Card Section */
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features-container h3 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.features-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.features-card-items {
+  background-color: #1a0b3c; /* ফিগমার ডার্ক ব্যাকগ্রাউন্ড কালার */
+  width: 380px;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 214px;
+  display: block;
+}
+
+.features-card-items h4 {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+}
+
+.features-card-items .description {
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.duration {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #00ff88;
+  font-size: 14px;
+}
+
+.duration img {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  .features-container {
+    padding: 40px 15px;
+  }
+
+  .features-container h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .features-card-container {
+    gap: 20px;
+  }
+
+  .features-card-items {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .video-wrapper iframe {
+    height: 200px;
+  }
+
+  .features-card-items h4 {
+    font-size: 18px;
+  }
+}
