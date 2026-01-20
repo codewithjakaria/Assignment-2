@@ -536,21 +536,21 @@
 }
 footer {
   width: 100%;
-  max-width: 1600px; /* আপনার ফিগমা ডেসকটপ সাইজ */
+  max-width: 1600px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
 .footer-container {
-  background-image: url('./assets/footer-bg.png'); /* আপনার দেওয়া ফাইল */
+  background-image: url('./assets/footer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 24px; /* ফিগমার রাউন্ডেড কর্নার */
+  border-radius: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 412px; /* ডেসকটপ হাইট */
+  min-height: 412px;
 }
 
 .footer-content {
