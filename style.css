@@ -24,7 +24,9 @@
   font-weight: bold;
 }
 .logo span {
-  color: #ff00ff;
+  background: linear-gradient(90deg, #a855f7 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -530,5 +532,95 @@
   .alex-kumar img {
     max-width: 150px;
     border-radius: 50%;
+  }
+}
+footer {
+  width: 100%;
+  max-width: 1600px; /* আপনার ফিগমা ডেসকটপ সাইজ */
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  background-image: url('./assets/footer-bg.png'); /* আপনার দেওয়া ফাইল */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px; /* ফিগমার রাউন্ডেড কর্নার */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 412px; /* ডেসকটপ হাইট */
+}
+
+.footer-content {
+  text-align: center;
+  color: white;
+}
+
+.footer-logo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.footer-logo span {
+  background: linear-gradient(90deg, #a855f7 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.footer-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    min-height: 248px;
+    background-size: 100% 100%;
+    padding: 30px 10px;
+  }
+
+  .footer-logo {
+    font-size: 32px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px 20px;
+    width: fit-content;
+    margin: 0 auto 20px;
+    text-align: left;
+  }
+
+  .footer-links li {
+    font-size: 14px;
   }
 }
